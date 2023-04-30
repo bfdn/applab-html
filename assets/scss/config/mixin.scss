@@ -1,0 +1,85 @@
+@mixin mq($width: "tablet") {
+    @if($width =="tablet") {
+
+        // Medium devices (tablets, 768px and up)
+        @media (min-width: 768px) {
+            @content
+        }
+    }
+
+    @else if($width =="desktop") {
+
+        // Large devices (desktops, 992px and up)
+        @media (min-width: 992px) {
+            @content
+        }
+    }
+
+    @else if($width =="large") {
+
+        // Extra large devices (large desktops, 1200px and up)
+        @media (min-width: 1200px) {
+            @content
+        }
+    }
+}
+
+@mixin radius($par) {
+    border-radius: $par;
+}
+
+@mixin transform($par) {
+    transform: $par;
+}
+
+@mixin fitImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@mixin transition($par) {
+    transition: $par;
+}
+
+@mixin mq_($width: "small") {
+    @if($width =="small") {
+
+        // Medium devices (tablets, 576px and up)
+        @media (min-width: 576px) {
+            @content
+        }
+    }
+
+    @else if($width =="medium") {
+
+        // Large devices (desktops, 768px and up)
+        @media (min-width: 768px) {
+            @content
+        }
+    }
+
+    @else if($width =="large") {
+
+        // Large devices (desktops, 992px and up)
+        @media (min-width: 992px) {
+            @content
+        }
+    }
+
+    @else if($width =="xlarge") {
+
+        // Extra large devices (large desktops, 1200px and up)
+        @media (min-width: 1200px) {
+            @content
+        }
+    }
+
+    @else if($width =="xxlarge") {
+
+        // Extra large devices (large desktops, 1400px and up)
+        @media (min-width: 1400px) {
+            @content
+        }
+    }
+}

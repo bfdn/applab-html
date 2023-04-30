@@ -1,0 +1,95 @@
+html,
+body {
+    font-family: $regular-font;
+    line-height: 1.6;
+    font-size: $font-size;
+    color: $gray-color;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.container {
+    max-width: $max-width;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    padding: pxtorem(20px) pxtorem(40px);
+    font-family: $bold-font;
+    color: $light-color;
+
+    &__bg-secondary-color {}
+
+    &__bg-light-color {}
+
+    &__light-color {}
+
+    &-plus {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    &__border {}
+}
+
+.bg-blue {
+    background-color: $primary-color;
+}
+
+.icon {
+    width: pxtorem(80px);
+    height: pxtorem(80px);
+    padding: pxtorem(15px);
+    border-radius: 50px;
+    text-align: center;
+    line-height: pxtorem(50px);
+
+    &__bg-blue {
+        background-color: #f4f4ff;
+    }
+
+    &__bg-green {
+        background-color: #e4ffee;
+    }
+
+    &__bg-red {
+        background-color: #ffecef;
+    }
+
+    &__bg-blue-light {
+        background-color: #eaf9ff;
+    }
+
+    &__bg-yellow {
+        background-color: #fff6d3;
+    }
+
+    &__bg-orange {
+        background-color: #fdeee4;
+    }
+
+}
+
+.text-blue {
+    color: $info-color;
+}
+
+.text-green {
+    color: $success-color;
+}
+
+.text-red {
+    color: $danger-color;
+}

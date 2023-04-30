@@ -1,0 +1,15 @@
+@function pxtoem($value) {
+    @return ($value / $font-size)+em;
+}
+
+@function pxtorem($value) {
+    @return ($value / $font-size)+rem;
+}
+
+@function pxtovh($value) {
+    @return ($value / 9px)+vh;
+}
+
+@function pxtovw($value) {
+    @return ($value / 9.60px)+vw;
+}

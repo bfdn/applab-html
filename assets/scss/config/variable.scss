@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url("../fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Poppins-SemiBold';
+    src: url("../fonts/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url("../fonts/Poppins-Bold.ttf");
+}
+
+
+
+$max-width: 1170px;
+$gutter: 30px;
+
+$regular-font: 'Poppins-Regular', sans-serif;
+$semibold-font: 'Poppins-SemiBold', sans-serif;
+$bold-font: 'Poppins-Bold', sans-serif;
+$font-size: 16px;
+
+
+
+
+// Renkler 
+$primary-color: #2500f9;
+$primary-color-dark: #242f51;
+
+$secondary-color: #2c4755;
+$danger-color: #f55767;
+$danger-color-light: #ffecef;
+$info-color: #2563ff;
+$info-color-light: #f4f4ff;
+$success-color: #40975f;
+$success-color-light: #e4ffee;
+
+
+$gray-color: #616368;
+$gray-color-light: #fdfdfe;
+$gray-color-light2: #e2eaed;
+$gray-color-light3: #999ca5;
+$light-color: #ffffff;
+$dark-color: #000000;
+
+$border-color: #b9b9b8;
+
+$orange-color: #feaa25;

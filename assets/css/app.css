@@ -1,0 +1,1205 @@
+@font-face {
+  font-family: 'Poppins-Regular';
+  src: url("../fonts/Poppins-Regular.ttf"); }
+@font-face {
+  font-family: 'Poppins-SemiBold';
+  src: url("../fonts/Poppins-SemiBold.ttf"); }
+@font-face {
+  font-family: 'Poppins-Bold';
+  src: url("../fonts/Poppins-Bold.ttf"); }
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0; }
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline; }
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none; }
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none; }
+
+/*! formalize.css | MIT License | github.com/interacthings/formalize */
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility; }
+
+body {
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+img {
+  vertical-align: middle; }
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure,
+p,
+pre,
+fieldset,
+ul,
+ol,
+menu,
+form {
+  margin: 0; }
+
+button,
+fieldset,
+iframe {
+  border: 0; }
+
+fieldset,
+ul,
+ol,
+button,
+menu {
+  padding: 0; }
+
+ol,
+ul {
+  list-style: none; }
+
+textarea {
+  resize: vertical; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td {
+  padding: 0; }
+
+html,
+body {
+  font-family: "Poppins-Regular", sans-serif;
+  line-height: 1.6;
+  font-size: 16px;
+  color: #616368; }
+
+h1,
+h2,
+h3 {
+  line-height: 1.2; }
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.btn {
+  padding: 1.25rem 2.5rem;
+  font-family: "Poppins-Bold", sans-serif;
+  color: #ffffff; }
+  .btn-plus {
+    width: 2.5rem;
+    height: 2.5rem; }
+
+.bg-blue {
+  background-color: #2500f9; }
+
+.icon {
+  width: 5rem;
+  height: 5rem;
+  padding: 0.9375rem;
+  border-radius: 50px;
+  text-align: center;
+  line-height: 3.125rem; }
+  .icon__bg-blue {
+    background-color: #f4f4ff; }
+  .icon__bg-green {
+    background-color: #e4ffee; }
+  .icon__bg-red {
+    background-color: #ffecef; }
+  .icon__bg-blue-light {
+    background-color: #eaf9ff; }
+  .icon__bg-yellow {
+    background-color: #fff6d3; }
+  .icon__bg-orange {
+    background-color: #fdeee4; }
+
+.text-blue {
+  color: #2563ff; }
+
+.text-green {
+  color: #40975f; }
+
+.text-red {
+  color: #f55767; }
+
+.header {
+  height: 100%;
+  background: url("../assets/img/header-bg.png") #fdfdfe repeat-x bottom center;
+  background-size: auto;
+  padding-top: 0.625rem; }
+  @media (min-width: 768px) {
+    .header {
+      padding-top: 5.625rem; } }
+  .header .container {
+    padding-left: 0.625rem;
+    padding-right: 0.625rem; }
+  .header__navigation {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    align-items: center;
+    grid-column-gap: 30px; }
+    .header__navigation-close {
+      display: none; }
+    .header__navigation-open {
+      display: block;
+      grid-row: 1/-1;
+      grid-column: 2/3;
+      text-align: right; }
+      @media (min-width: 768px) {
+        .header__navigation-open {
+          display: none; } }
+    .header__navigation .header__logo {
+      max-width: 7.3125rem; }
+      .header__navigation .header__logo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .header__navigation .navbar {
+      grid-row: 2/3;
+      grid-column: 1/-1;
+      margin-top: 1.25rem; }
+      @media (min-width: 768px) {
+        .header__navigation .navbar {
+          grid-row: 1/2;
+          grid-column: 2/3;
+          margin-top: 0;
+          justify-self: end; } }
+      .header__navigation .navbar__menu {
+        display: none; }
+        @media (min-width: 768px) {
+          .header__navigation .navbar__menu {
+            display: flex;
+            gap: 30px; } }
+        .header__navigation .navbar__menu-item {
+          color: #242f51;
+          font-weight: 600;
+          border-bottom: 1px solid #e2eaed; }
+          @media (min-width: 768px) {
+            .header__navigation .navbar__menu-item {
+              border: none; } }
+          .header__navigation .navbar__menu-item:last-child {
+            border: none;
+            margin-top: 1.875rem;
+            max-width: 10.625rem; }
+            @media (min-width: 768px) {
+              .header__navigation .navbar__menu-item:last-child {
+                margin-top: 0; } }
+            .header__navigation .navbar__menu-item:last-child .navbar__menu-item-link {
+              border-radius: 50px;
+              padding-top: 1.25rem;
+              padding-bottom: 1.25rem; }
+          .header__navigation .navbar__menu-item-link {
+            display: block;
+            padding-top: 0.625rem;
+            padding-bottom: 0.625rem; }
+        .header__navigation .navbar__menu--show {
+          display: flex;
+          flex-direction: column;
+          background-color: #ffffff; }
+  .header__info {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    justify-content: space-between;
+    justify-items: end;
+    margin-top: 1rem;
+    grid-column-gap: 6.25rem; }
+    @media (min-width: 768px) {
+      .header__info {
+        margin-top: 3.125rem;
+        grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width: 992px) {
+      .header__info {
+        padding-left: 4.375rem;
+        padding-right: 4.375rem; } }
+    .header__info-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+    .header__info-left {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-row-gap: 2.5rem;
+      grid-column-gap: 1.25rem;
+      align-items: center; }
+      .header__info-left p:first-child {
+        grid-column: 1/-1;
+        padding: 10px 10px 10px 0px;
+        background-color: #e2eaed;
+        border-radius: 50px;
+        font-family: "Poppins-Regular", sans-serif;
+        font-size: 0.875rem;
+        color: #242f51;
+        max-width: 23.125rem; }
+        @media (min-width: 768px) {
+          .header__info-left p:first-child {
+            padding: 10px 30px 10px 0px;
+            font-size: 1.125rem; } }
+        .header__info-left p:first-child span {
+          background-color: #feaa25;
+          padding: 12px 15px;
+          border-radius: 50px; }
+          @media (min-width: 768px) {
+            .header__info-left p:first-child span {
+              margin-right: 1.25rem; } }
+      .header__info-left h3 {
+        grid-column: 1/-1;
+        font-family: "Poppins-SemiBold", sans-serif;
+        font-size: 3.75rem;
+        color: #242f51; }
+      .header__info-left p:nth-child(3) {
+        grid-column: 1/-1;
+        font-size: 1.125rem;
+        color: #616368; }
+      .header__info-left a {
+        font-family: "Poppins-Bold", sans-serif; }
+      .header__info-left .free__btn {
+        font-weight: 600;
+        border-radius: 50px;
+        grid-row: 4/5;
+        grid-column: 1/-1;
+        max-width: 10.625rem; }
+      .header__info-left .video__link {
+        color: #2500f9;
+        font-weight: 500;
+        grid-row: 5/6;
+        grid-column: 1/-1; }
+        @media (min-width: 768px) {
+          .header__info-left .video__link {
+            grid-row: 4/5;
+            grid-column: 2/3; } }
+        .header__info-left .video__link:hover {
+          text-decoration: underline; }
+
+.footer {
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+  background-color: #09142e; }
+  .footer .container {
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.875rem;
+    align-items: center;
+    text-align: center; }
+  .footer__menu {
+    display: flex;
+    gap: 1.875rem;
+    flex-direction: column; }
+    @media (min-width: 768px) {
+      .footer__menu {
+        flex-direction: row; } }
+    .footer__menu a {
+      color: #ffffff; }
+  .footer__social {
+    display: flex;
+    gap: 1.875rem; }
+    .footer__social a {
+      color: #273043;
+      transition: all 500ms; }
+      .footer__social a:hover {
+        color: #ffffff; }
+
+.companies {
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem; }
+  @media (min-width: 768px) {
+    .companies {
+      padding-top: 6.25rem;
+      padding-bottom: 6.25rem; } }
+  .companies .container {
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    display: grid;
+    grid-gap: 1.875rem;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); }
+    @media (min-width: 768px) {
+      .companies .container {
+        padding-left: 6.25rem;
+        padding-right: 6.25rem; } }
+  .companies__title {
+    grid-column: 1/-1;
+    color: #242f51; }
+  .companies__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
+.features {
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem; }
+  @media (min-width: 768px) {
+    .features {
+      padding-top: 6.25rem;
+      padding-bottom: 6.25rem; } }
+  .features .container {
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    display: grid;
+    grid-gap: 1.875rem;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); }
+    @media (min-width: 768px) {
+      .features .container {
+        padding-right: 6.25rem; } }
+  .features__img {
+    background: url("../img/features-bg.png") no-repeat center;
+    background-size: contain; }
+    @media (min-width: 1200px) {
+      .features__img {
+        transform: translateX(-60px); } }
+    .features__img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .features__list {
+    display: grid;
+    grid-gap: 2.5rem; }
+    .features__list-item:has(.icon) {
+      display: grid;
+      grid-template-columns: min-content 1fr;
+      grid-column-gap: 1.25rem;
+      align-items: center; }
+    .features__list-item h3 {
+      font-family: "Poppins-SemiBold", sans-serif; }
+    .features__list-item p {
+      color: #616368;
+      margin-top: 1.25rem;
+      grid-column: 2/3; }
+    .features__list-item:nth-child(1) h3 {
+      font-size: 2.25rem;
+      color: #242f51; }
+    .features__list-item:nth-child(2) h3 {
+      color: #f55767; }
+    .features__list-item:nth-child(2) .icon {
+      background-color: #ffecef; }
+      .features__list-item:nth-child(2) .icon i {
+        color: #f55767; }
+    .features__list-item:nth-child(3) h3 {
+      color: #2563ff; }
+    .features__list-item:nth-child(3) .icon {
+      background-color: #f4f4ff; }
+      .features__list-item:nth-child(3) .icon i {
+        color: #2563ff; }
+    .features__list-item:nth-child(4) h3 {
+      color: #40975f; }
+    .features__list-item:nth-child(4) .icon {
+      background-color: #e4ffee; }
+      .features__list-item:nth-child(4) .icon i {
+        color: #40975f; }
+    .features__list-item .icon {
+      width: 5rem;
+      height: 5rem;
+      padding: 0.9375rem;
+      border-radius: 50px;
+      text-align: center;
+      line-height: 3.125rem;
+      grid-row: 1/3; }
+
+.smart {
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem; }
+  @media (min-width: 768px) {
+    .smart {
+      padding-top: 3.125rem;
+      padding-bottom: 3.125rem; } }
+  .smart .container {
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    display: grid;
+    grid-gap: 30px; }
+    @media (min-width: 768px) {
+      .smart .container {
+        padding-left: 4.375rem;
+        padding-right: 4.375rem;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        align-items: center; } }
+  .smart__item {
+    display: grid;
+    grid-gap: 0.625rem; }
+    .smart__item h3 {
+      color: #242f51;
+      font-family: "Poppins-SemiBold", sans-serif;
+      font-size: 2.5rem; }
+    .smart__item p {
+      padding: 2.1875rem 2.1875rem 2.1875rem 2.8125rem;
+      border-left: 1px solid #b9b9b8; }
+    @media (min-width: 992px) {
+      .smart__item:has(.icon) {
+        padding: 1.5625rem; } }
+    .smart__item:has(.icon) h4 {
+      font-size: 1.25rem; }
+    @media (min-width: 768px) {
+      .smart__item:nth-of-type(1) {
+        grid-row: 1/2;
+        grid-column: 1/4; }
+      .smart__item:nth-of-type(2) {
+        grid-row: 1/2;
+        grid-column: 4/7; }
+      .smart__item:nth-of-type(3) {
+        grid-row: 2/3;
+        grid-column: 1/3; }
+      .smart__item:nth-of-type(4) {
+        grid-row: 2/3;
+        grid-column: 3/5; }
+      .smart__item:nth-of-type(5) {
+        grid-row: 2/3;
+        grid-column: 5/7; } }
+
+.design {
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem;
+  border-bottom: 2px solid #f4f4f4; }
+  @media (min-width: 768px) {
+    .design {
+      padding-top: 6.25rem;
+      padding-bottom: 6.25rem; } }
+  .design .container {
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    display: grid;
+    grid-gap: 1.875rem; }
+    @media (min-width: 768px) {
+      .design .container {
+        padding-left: 0;
+        padding-right: 0;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center; } }
+    @media (min-width: 992px) {
+      .design .container {
+        padding-right: 6.25rem;
+        grid-gap: 1.875rem 6.25rem; } }
+  @media (min-width: 1200px) {
+    .design__img {
+      transform: translateX(-30px); } }
+  .design__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .design__content {
+    display: grid;
+    grid-gap: 1.875rem; }
+    .design__content h3 {
+      color: #242f51;
+      font-size: 2.25rem;
+      font-family: "Poppins-SemiBold", sans-serif; }
+    .design__content a {
+      font-family: "Poppins-Bold", sans-serif;
+      font-weight: 600;
+      max-width: 11.875rem;
+      border-radius: 3.125rem;
+      text-align: center; }
+
+.why {
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem; }
+  @media (min-width: 768px) {
+    .why {
+      padding-top: 6.25rem;
+      padding-bottom: 6.25rem; } }
+  .why .container {
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    display: grid;
+    grid-gap: 3.125rem;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    text-align: center; }
+    @media (min-width: 992px) {
+      .why .container {
+        padding-left: 6.25rem;
+        padding-right: 6.25rem; } }
+  .why h3 {
+    color: #242f51;
+    font-family: "Poppins-SemiBold", sans-serif;
+    font-size: 2.25rem;
+    grid-column: 1/-1;
+    grid-row: 1/2; }
+    @media (min-width: 992px) {
+      .why h3 {
+        padding-left: 16.875rem;
+        padding-right: 16.875rem; } }
+  .why__text {
+    grid-column: 1/-1;
+    grid-row: 2/3; }
+    @media (min-width: 992px) {
+      .why__text {
+        padding-left: 10.625rem;
+        padding-right: 10.625rem; } }
+  .why__item {
+    display: grid;
+    grid-gap: 0.9375rem;
+    justify-items: center; }
+    .why__item h4 {
+      color: #242f51;
+      font-size: 1.25rem;
+      font-family: "Poppins-SemiBold", sans-serif; }
+
+.planning {
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem; }
+  @media (min-width: 768px) {
+    .planning {
+      padding-top: 6.25rem;
+      padding-bottom: 6.25rem; } }
+  .planning .container {
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    display: grid;
+    grid-gap: 3.125rem;
+    align-items: center; }
+    @media (min-width: 768px) {
+      .planning .container {
+        grid-template-columns: repeat(2, 1fr); } }
+  .planning__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-gap: 1.875rem; }
+    .planning__content h3 {
+      color: #242f51;
+      font-family: "Poppins-SemiBold", sans-serif;
+      font-size: 2.25rem;
+      grid-column: 1/-1;
+      grid-row: 1/2; }
+      @media (min-width: 992px) {
+        .planning__content h3 {
+          padding-right: 11.875rem; } }
+    .planning__content-text {
+      grid-column: 1/-1;
+      grid-row: 2/3; }
+      @media (min-width: 992px) {
+        .planning__content-text {
+          padding-right: 11.875rem; } }
+    .planning__content a {
+      display: block;
+      max-width: 10.625rem;
+      border-radius: 3.125rem;
+      text-align: center;
+      font-family: "Poppins-Bold", sans-serif;
+      font-weight: 600; }
+    .planning__content-item {
+      display: grid;
+      grid-gap: 0.9375rem; }
+      .planning__content-item h4 {
+        color: #242f51;
+        font-size: 1.25rem;
+        font-family: "Poppins-SemiBold", sans-serif; }
+  .planning__img {
+    background: url("../img/planning-bg.png") no-repeat center;
+    background-size: contain; }
+    @media (min-width: 1200px) {
+      .planning__img {
+        transform: translateX(75px); } }
+    .planning__img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+
+.price {
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem;
+  border-bottom: 2px solid #f4f4f4; }
+  @media (min-width: 992px) {
+    .price {
+      padding-top: 6.25rem;
+      padding-bottom: 6.25rem; } }
+  .price .container {
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    display: grid;
+    grid-gap: 1.875rem;
+    justify-items: center;
+    text-align: center; }
+  .price h3 {
+    color: #242f51;
+    font-family: "Poppins-SemiBold", sans-serif;
+    font-size: 2.25rem;
+    grid-column: 1/-1;
+    grid-row: 1/2; }
+    @media (min-width: 768px) {
+      .price h3 {
+        padding-left: 6.25rem;
+        padding-right: 6.25rem; } }
+    @media (min-width: 992px) {
+      .price h3 {
+        padding-left: 16.875rem;
+        padding-right: 16.875rem; } }
+  .price__text {
+    grid-column: 1/-1;
+    grid-row: 2/3; }
+    @media (min-width: 768px) {
+      .price__text {
+        padding-left: 6.25rem;
+        padding-right: 6.25rem; } }
+    @media (min-width: 992px) {
+      .price__text {
+        padding-left: 16.875rem;
+        padding-right: 16.875rem; } }
+  .price__tab-menu {
+    border: 1px solid #b9b9b8;
+    border-radius: 3.125rem;
+    max-width: 17.5rem;
+    display: flex;
+    align-items: center;
+    column-gap: 1rem; }
+    .price__tab-menu:has(a:nth-child(1).price__link--active) {
+      padding: 0.2125rem 1.75rem 0.2125rem 0.2375rem; }
+    .price__tab-menu:has(a:nth-child(2).price__link--active) {
+      padding: 0.2125rem 0.2rem 0.2125rem 2.5rem; }
+    .price__tab-menu a {
+      font-weight: bold; }
+    .price__tab-menu .price__link--active {
+      max-width: 135px;
+      border-radius: 3.125rem;
+      padding: 0.9375rem 1.875rem 0.9375rem 1.875rem;
+      font-family: "Poppins-Bold", sans-serif;
+      font-weight: 600;
+      background-color: #2500f9; }
+  .price__tab-content {
+    width: 100%; }
+  .price__tab-item {
+    display: none;
+    grid-gap: 3.125rem;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, max-content));
+    justify-content: center;
+    align-items: start; }
+    @media (min-width: 768px) {
+      .price__tab-item {
+        grid-template-columns: repeat(auto-fit, minmax(18rem, max-content)); } }
+    .price__tab-item--active {
+      display: grid; }
+  .price__tab-box {
+    max-width: 19.6875rem;
+    box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 0.625rem; }
+  .price__tab-top {
+    background-color: #f4f7f9;
+    border-top-left-radius: 0.625rem;
+    border-top-right-radius: 0.625rem;
+    padding: 2.5rem 2.5rem;
+    text-align: center; }
+    @media (min-width: 768px) {
+      .price__tab-top {
+        padding: 2.5rem 3.75rem; } }
+    .price__tab-top h4 {
+      color: #242f51;
+      font-family: "Poppins-SemiBold", sans-serif;
+      font-size: 1.25rem; }
+    .price__tab-top p {
+      color: #999ca5; }
+  .price__tab-price {
+    font-family: "Poppins-SemiBold", sans-serif;
+    font-size: 3.125rem;
+    color: #242f51; }
+    @media (min-width: 768px) {
+      .price__tab-price {
+        font-size: 3.75rem; } }
+    .price__tab-price span {
+      font-size: 1.125rem;
+      color: #999ca5;
+      font-family: "Poppins-Regular", sans-serif;
+      margin-left: -0.9375rem; }
+  .price__tab-bottom {
+    border-bottom-left-radius: 0.625rem;
+    border-bottom-right-radius: 0.625rem;
+    padding: 2.5rem 1.875rem;
+    display: grid;
+    grid-gap: 1.25rem;
+    justify-items: center; }
+    @media (min-width: 768px) {
+      .price__tab-bottom {
+        padding: 2.5rem 3.125rem; } }
+    .price__tab-bottom .price__btn {
+      display: block;
+      border-radius: 3.125rem;
+      font-family: "Poppins-SemiBold", sans-serif;
+      font-weight: 600; }
+    .price__tab-bottom p {
+      color: #999ca5; }
+    .price__tab-bottom .trail {
+      color: #2500f9; }
+      .price__tab-bottom .trail:hover {
+        text-decoration: underline; }
+
+.testimonials {
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem; }
+  @media (min-width: 992px) {
+    .testimonials {
+      padding-top: 6.25rem;
+      padding-bottom: 6.25rem; } }
+  .testimonials .container {
+    padding-left: 0.625rem;
+    padding-right: 0.625rem; }
+    @media (min-width: 768px) {
+      .testimonials .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px; } }
+  @media (min-width: 768px) {
+    .testimonials__img img {
+      object-fit: contain; } }
+  .testimonials__box {
+    display: grid;
+    grid-gap: 1.875rem;
+    margin-top: 1.875rem; }
+    @media (min-width: 768px) {
+      .testimonials__box {
+        margin-top: 0; } }
+  .testimonials__title {
+    color: #242f51;
+    font-size: 2.5rem; }
+  .testimonials p {
+    color: #616368; }
+  .testimonials__item {
+    display: none;
+    transition: all 500ms; }
+    .testimonials__item.active {
+      display: grid;
+      grid-gap: 1.875rem; }
+    .testimonials__item .star i {
+      color: #ffcc00; }
+    .testimonials__item-title {
+      color: #242f51;
+      font-size: 1.25rem;
+      font-family: "Poppins-SemiBold", sans-serif; }
+    .testimonials__item p {
+      color: #616368; }
+    .testimonials__item-user {
+      display: grid;
+      grid-template-columns: max-content 1fr;
+      grid-gap: 30px; }
+      .testimonials__item-user img {
+        grid-column: 1/2;
+        grid-row: 1/3; }
+      .testimonials__item-user h4 {
+        font-size: 1.25rem; }
+      .testimonials__item-user p {
+        color: #616368;
+        grid-column: 2/3;
+        grid-row: 2/3;
+        transform: translateY(-30px); }
+  .testimonials__btn {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px; }
+    @media (min-width: 768px) {
+      .testimonials__btn {
+        transform: translateY(-110px); } }
+    .testimonials__btn button {
+      padding: 15px;
+      border-radius: 50px; }
+      .testimonials__btn button:hover {
+        cursor: pointer; }
+    .testimonials__btn .notactive {
+      background-color: #ffffff;
+      border: 2px solid #ededed; }
+    .testimonials__btn .active {
+      color: #310ef9;
+      background-color: #eff3f8; }
+
+.faq {
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem;
+  border-bottom: 2px solid #f4f4f4; }
+  @media (min-width: 992px) {
+    .faq {
+      padding-top: 6.25rem;
+      padding-bottom: 6.25rem; } }
+  .faq .container {
+    padding-left: 0.625rem;
+    padding-right: 0.625rem; }
+  .faq h2 {
+    color: #242f51;
+    font-size: 2.5rem;
+    font-family: "Poppins-SemiBold", sans-serif;
+    text-align: center; }
+  .faq .subtitle {
+    color: #616368;
+    text-align: center;
+    width: 70%;
+    margin: 30px auto 0 auto; }
+  .faq__item {
+    padding: 1.25rem 2.5rem;
+    background-color: #f5f7fa;
+    transition: all 500ms; }
+    .faq__item:nth-of-type(1) {
+      margin-top: 3.75rem; }
+    .faq__item:has(+ .faq__item) {
+      margin-bottom: 0.625rem; }
+    .faq__item:hover {
+      cursor: pointer; }
+    .faq__item-title {
+      font-size: 1.25rem;
+      color: #242f51;
+      font-family: "Poppins-SemiBold", sans-serif;
+      display: flex;
+      justify-content: space-between; }
+    .faq__item p {
+      display: none; }
+    .faq__item.active {
+      padding: 2.5rem;
+      height: 100%; }
+      .faq__item.active p {
+        display: block; }
+      .faq__item.active .faq__item-title {
+        margin-bottom: 1.875rem; }
+    .faq__item .faq__item-title {
+      margin-bottom: 0; }
+
+.download .container {
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  @media (min-width: 768px) {
+    .download .container {
+      flex-direction: row; } }
+.download__content-img {
+  display: flex;
+  gap: 1.875rem;
+  flex-wrap: wrap;
+  margin-top: 1.875rem; }
+  .download__content-img img {
+    max-width: 100%;
+    width: initial;
+    height: auto; }
+.download__content h2 {
+  font-size: 3rem;
+  font-family: "Poppins-SemiBold", sans-serif;
+  color: #242f51; }
+.download__content p {
+  color: #616368;
+  margin-top: 1.875rem; }
+.download__img {
+  margin-top: 1.875rem; }
+  @media (min-width: 1200px) {
+    .download__img img {
+      transform: translateX(125px); } }
+
+/*# sourceMappingURL=app.css.map */

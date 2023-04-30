@@ -1,0 +1,43 @@
+.footer {
+    padding-top: pxtorem(120px);
+    padding-bottom: pxtorem(120px);
+    background-color: #09142e;
+
+    .container {
+        padding-left: pxtorem(10px);
+        padding-right: pxtorem(10px);
+        display: flex;
+        flex-direction: column;
+        gap: pxtorem(30px);
+        align-items: center;
+        text-align: center;
+    }
+
+    &__menu {
+        display: flex;
+        gap: pxtorem(30px);
+        flex-direction: column;
+
+        @include mq('tablet') {
+            flex-direction: row;
+        }
+
+        a {
+            color: $light-color;
+        }
+    }
+
+    &__social {
+        display: flex;
+        gap: pxtorem(30px);
+
+        a {
+            color: #273043;
+            transition: all 500ms;
+
+            &:hover {
+                color: $light-color;
+            }
+        }
+    }
+}
